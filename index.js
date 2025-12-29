@@ -5,11 +5,11 @@ dotenv.config();
 
 async function startBot() {
   try {
-    if (!process.env.TELEGRAM_BOT_TOKEN) {
+    if (!process.env.TELEGRAM_BOT_TOKENT) {
       throw new Error('Bot token missing');
     }
 
-    const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
+    const bot = new Telegraf(process.env..'8182617462:AAHrEAokc-8vBW__TBOM5nSE3_5WaPMEs2Y');
     bot.use(session());
 
     const escrowDeals = new Map();
